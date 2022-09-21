@@ -1,4 +1,4 @@
-package com.example.dbpetclinic.model;
+package dbpetclinicdata.model;
 
 public class PetType {
 
