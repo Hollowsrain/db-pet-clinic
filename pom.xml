@@ -14,7 +14,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>db-pet-clinic</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>pet clinic</name>
 	<description>pet clinic learning project</description>
 	<properties>
@@ -48,7 +48,7 @@
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:Hollowsrain/db-pet-clinic.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>db-pet-clinic-0.0.2</tag>
   </scm>
 
 </project>
