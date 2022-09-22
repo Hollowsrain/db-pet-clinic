@@ -1,11 +1,9 @@
 package dbpetclinicdata.model;
 
-import javax.persistence.Id;
 import java.io.Serializable;
 
 public class BaseEntity implements Serializable {
 
-    @Id
     private Long id;
 
     public Long getId() {
