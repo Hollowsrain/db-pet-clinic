@@ -6,7 +6,7 @@ public interface BaseService<T, ID> {
 
     T findById(ID id);
 
-    <S extends T> S save(S entity);
+     T save(T entity);
 
     Set<T> findAll();
 
