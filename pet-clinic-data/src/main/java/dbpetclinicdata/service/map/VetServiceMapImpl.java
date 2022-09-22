@@ -1,11 +1,11 @@
 package dbpetclinicdata.service.map;
 
 import dbpetclinicdata.model.Vet;
-import dbpetclinicdata.service.BaseService;
+import dbpetclinicdata.service.VetService;
 
 import java.util.Set;
 
-public class VetServiceMapImpl extends AbstractMapService<Vet, Long> implements BaseService<Vet, Long> {
+public class VetServiceMapImpl extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Vet findById(Long id) {

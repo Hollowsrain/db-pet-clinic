@@ -1,11 +1,11 @@
 package dbpetclinicdata.service.map;
 
 import dbpetclinicdata.model.Owner;
-import dbpetclinicdata.service.BaseService;
+import dbpetclinicdata.service.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMapImpl extends AbstractMapService<Owner, Long> implements BaseService<Owner, Long> {
+public class OwnerServiceMapImpl extends AbstractMapService<Owner, Long> implements OwnerService{
     @Override
     public Owner findById(Long id) {
         return super.findById(id);
@@ -29,5 +29,10 @@ public class OwnerServiceMapImpl extends AbstractMapService<Owner, Long> impleme
     @Override
     public void delete(Owner owner) {
         super.delete(owner);
+    }
+
+    @Override
+    public Owner findBtLastName(String lastName) {
+        return null;
     }
 }
