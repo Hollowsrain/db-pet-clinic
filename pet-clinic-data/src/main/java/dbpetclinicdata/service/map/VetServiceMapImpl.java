@@ -2,7 +2,6 @@ package dbpetclinicdata.service.map;
 
 import dbpetclinicdata.model.Vet;
 import dbpetclinicdata.service.VetService;
-import org.springframework.stereotype.Service;
 
 import java.util.Set;
 

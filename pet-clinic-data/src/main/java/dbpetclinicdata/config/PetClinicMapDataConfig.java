@@ -2,9 +2,11 @@ package dbpetclinicdata.config;
 
 import dbpetclinicdata.service.OwnerService;
 import dbpetclinicdata.service.PetService;
+import dbpetclinicdata.service.PetTypeService;
 import dbpetclinicdata.service.VetService;
 import dbpetclinicdata.service.map.OwnerServiceMapImpl;
 import dbpetclinicdata.service.map.PetServiceMapImpl;
+import dbpetclinicdata.service.map.PetTypeServiceImpl;
 import dbpetclinicdata.service.map.VetServiceMapImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -27,6 +29,11 @@ public class PetClinicMapDataConfig {
     @Bean
     VetService vetService(){
         return new VetServiceMapImpl();
+    }
+
+    @Bean
+    PetTypeService petTypeService(){
+        return new PetTypeServiceImpl();
     }
 
 

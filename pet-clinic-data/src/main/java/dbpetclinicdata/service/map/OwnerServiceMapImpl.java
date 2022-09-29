@@ -2,7 +2,6 @@ package dbpetclinicdata.service.map;
 
 import dbpetclinicdata.model.Owner;
 import dbpetclinicdata.service.OwnerService;
-import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
