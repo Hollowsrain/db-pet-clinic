@@ -2,9 +2,13 @@ package dbpetclinicdata.service.map;
 
 import dbpetclinicdata.model.Speciality;
 import dbpetclinicdata.service.SpecialtyService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
+@Profile({"MAP", "default"})
 public class SpecialtyMapServiceImpl extends AbstractMapService<Speciality, Long> implements SpecialtyService {
     @Override
     public Speciality findById(Long id) {

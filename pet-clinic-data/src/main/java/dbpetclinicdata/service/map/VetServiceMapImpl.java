@@ -2,9 +2,13 @@ package dbpetclinicdata.service.map;
 
 import dbpetclinicdata.model.Vet;
 import dbpetclinicdata.service.VetService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
+@Profile({"MAP", "default"})
 public class VetServiceMapImpl extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
