@@ -6,7 +6,7 @@ import dbpetclinicdata.service.PetTypeService;
 import dbpetclinicdata.service.VetService;
 import dbpetclinicdata.service.map.OwnerServiceMapImpl;
 import dbpetclinicdata.service.map.PetServiceMapImpl;
-import dbpetclinicdata.service.map.PetTypeServiceImpl;
+import dbpetclinicdata.service.map.PetTypeMapServiceImpl;
 import dbpetclinicdata.service.map.VetServiceMapImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,7 +33,7 @@ public class PetClinicMapDataConfig {
 
     @Bean
     PetTypeService petTypeService(){
-        return new PetTypeServiceImpl();
+        return new PetTypeMapServiceImpl();
     }
 
 

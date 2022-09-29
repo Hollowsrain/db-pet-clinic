@@ -6,7 +6,7 @@ import dbpetclinicdata.service.PetTypeService;
 import java.util.Set;
 
 
-public class PetTypeServiceImpl extends AbstractMapService<PetType, Long> implements PetTypeService {
+public class PetTypeMapServiceImpl extends AbstractMapService<PetType, Long> implements PetTypeService {
     @Override
     public PetType findById(Long id) {
         return super.findById(id);
