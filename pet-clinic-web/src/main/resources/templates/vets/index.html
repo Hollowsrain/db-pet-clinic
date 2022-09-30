@@ -10,16 +10,16 @@
 <table id="vets" class="table table-striped">
     <thead>
     <tr>
-        <th style="width: 150px;">ID</th>
-        <th style="width: 200px;">Name</th>
+        <th>Name</th>
+        <th>Specialties</th>
     </tr>
     </thead>
     <tbody>
     <tr th:each="vet : ${vetList}">
-        <td th:text="${vet.id}"/>
-        <td>
-            <a th:href="@{/owners/__${vet.id}__}" th:text="${vet.firstName + ' ' + vet.lastName}"/></a>
-        </td>
+        <td th:text="${vet.firstName + ' ' + vet.lastName}"></td>
+        <td><span th:each="specialty : ${vet.specialties}"
+                  th:text="${specialty.name + ' '}"/> <span
+                th:if="${vet.nrOfSpecialties == 0}">none</span></td>
     </tr>
     </tbody>
 </table>
