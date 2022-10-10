@@ -16,8 +16,10 @@ public class VisitMapServiceImpl extends AbstractMapService<Visit, Long> impleme
     }
 
     @Override
-    public Visit save(Visit entity) {
-        return super.save(entity);
+    public Visit save(Visit visit) {
+        if (isPetOrOwnerNull(visit)) {
+            throw new RuntimeException("Invalid Visit object");
+        } else return super.save(visit);
     }
 
     @Override
@@ -33,5 +35,9 @@ public class VisitMapServiceImpl extends AbstractMapService<Visit, Long> impleme
     @Override
     public void delete(Visit object) {
         super.delete(object);
+    }
+
+    private boolean isPetOrOwnerNull(Visit visit) {
+        return visit.getPet() == null || visit.getPet().getOwner() == null || visit.getPet().getId() == null || visit.getPet().getOwner().getId() == null;
     }
 }
