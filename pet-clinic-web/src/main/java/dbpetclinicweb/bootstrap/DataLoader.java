@@ -1,7 +1,7 @@
 package dbpetclinicweb.bootstrap;
 
-import dbpetclinicdata.model.*;
-import dbpetclinicdata.service.*;
+import dbpetclinicweb.model.*;
+import dbpetclinicweb.service.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -27,7 +27,7 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         int count = petTypeService.findAll().size();
-        if (count == 0){
+        if (count == 0) {
             loadData();
         }
     }

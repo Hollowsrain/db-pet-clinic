@@ -1,6 +1,6 @@
 package dbpetclinicweb.controller;
 
-import dbpetclinicdata.service.VetService;
+import dbpetclinicweb.service.VetService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
