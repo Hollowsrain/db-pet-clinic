@@ -71,9 +71,9 @@ class OwnerJPAServiceTest {
     void findAll() {
         Set<Owner> returnOwnerSet = new HashSet<>();
         Owner owner1 = new Owner();
-        returnOwner.setId(2L);
+        owner1.setId(2L);
         Owner owner2 = new Owner();
-        returnOwner.setId(3L);
+        owner2.setId(3L);
 
         returnOwnerSet.add(owner1);
         returnOwnerSet.add(owner2);
