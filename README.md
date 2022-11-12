@@ -1,1 +1,1 @@
-# db-pet-clinic
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Hollowsrain/db-pet-clinic/tree/main.svg?style=svg&circle-token=53da0f477b1790133c3ba8f85c5274d2b49888c5)](https://dl.circleci.com/status-badge/redirect/gh/Hollowsrain/db-pet-clinic/tree/main)
